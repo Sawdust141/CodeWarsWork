@@ -39,9 +39,9 @@ decodeMorse = function(morseCode){
     let words = morseCode.split('  ')
     let wordsArr = []
     words.forEach((x,i) => {
-    wordsArr[i] = words[i].split(' ')
-                          .map(x => MORSE_CODE[x])
-                          .join('')
-    })
+        wordsArr[i] = words[i].split(' ')
+                              .map(x => MORSE_CODE[x])
+                              .join('')
+        })
     return wordsArr.join(' ').trim()
   }
