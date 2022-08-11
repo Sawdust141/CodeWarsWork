@@ -4,7 +4,9 @@ Return - How long will it take the queue to be fully checked out? As one till be
          The customers move in order, but the tills DONT. They check out the next customer whenever the till is free.
 Example - ([10,2,3,3], 2) should return 10
           because here n=2 and the 2nd, 3rd, and 4th people in the queue finish before the 1st person has finished.
-Pseudocode -
+Pseudocode - Create array and give it elements equal to the number of tills, all valued at 0 (fill() was a huge help with acheiving this.)
+             forEach - Run through all customers adding their value to the element with the lowest value.
+             Return the element with the highest value.
 */
 
 function queueTime(customers, n) {
